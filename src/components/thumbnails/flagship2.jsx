@@ -424,6 +424,194 @@ export function FinanceProThumb() {
 }
 
 // ============================================
+// LUMEN — Document Intelligence Platform (RAG + Multi-LLM)
+// ============================================
+export function LumenThumb() {
+  return (
+    <svg {...baseSvgProps}>
+      <defs>
+        <linearGradient id="ln-bg" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stopColor="#140a0c" />
+          <stop offset="1" stopColor="#080406" />
+        </linearGradient>
+        <linearGradient id="ln-red" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stopColor="#ef4444" />
+          <stop offset="1" stopColor="#b91c1c" />
+        </linearGradient>
+        <radialGradient id="ln-glow" cx="0.5" cy="0.5" r="0.5">
+          <stop offset="0" stopColor="#ef4444" stopOpacity="0.25" />
+          <stop offset="1" stopColor="#ef4444" stopOpacity="0" />
+        </radialGradient>
+      </defs>
+      <rect width="800" height="500" fill="url(#ln-bg)" />
+
+      {/* Ambient glow */}
+      <ellipse cx="640" cy="120" rx="180" ry="100" fill="url(#ln-glow)" />
+
+      {/* Top bar */}
+      <rect x="0" y="0" width="800" height="46" fill="rgba(8,4,6,0.7)" />
+      <rect x="20" y="11" width="26" height="24" rx="6" fill="url(#ln-red)" />
+      <text x="33" y="28" fontFamily="serif" fontStyle="italic" fontSize="14" fontWeight="700" fill="#fff" textAnchor="middle">L</text>
+      <text x="56" y="22" fontFamily="serif" fontStyle="italic" fontSize="14" fontWeight="600" fill="#fff">Lumen<tspan fill="#ef4444">.</tspan></text>
+      <text x="56" y="36" fontFamily="monospace" fontSize="8" fill="#ef4444" letterSpacing="1">INTELLIGENCE · DISTILLED</text>
+
+      {/* Nav pills */}
+      <g transform="translate(220 11)">
+        {[
+          { label: 'Home', x: 0 },
+          { label: 'Dashboard', x: 60, active: true },
+          { label: 'Upload', x: 148 },
+          { label: 'Pricing', x: 208 },
+        ].map((n) => (
+          <g key={n.label}>
+            {n.active && <rect x={n.x - 6} y="0" width="64" height="24" rx="12" fill="#000" />}
+            <text x={n.x + n.label.length * 2.5} y="16" fontFamily="sans-serif" fontSize="10" fontWeight={n.active ? '600' : '400'} fill={n.active ? '#fff' : '#64748b'}>{n.label}</text>
+          </g>
+        ))}
+      </g>
+
+      {/* Right: workspace badge */}
+      <rect x="660" y="11" width="120" height="24" rx="12" fill="url(#ln-red)" />
+      <text x="720" y="27" fontFamily="sans-serif" fontSize="10" fontWeight="600" fill="#fff" textAnchor="middle">Workspace ↗</text>
+
+      {/* Stat strip */}
+      {[
+        { x: 20, label: 'DOCUMENTS', value: '12', sub: '↗ 4 this week' },
+        { x: 200, label: 'TOTAL PAGES', value: '1,847', sub: 'indexed · OCR' },
+        { x: 380, label: 'QUERIES TODAY', value: '38', sub: '0 / 15 free left' },
+        { x: 560, label: 'AVG LATENCY', value: '1.2s', sub: 'Groq · Llama 3.3' },
+      ].map((s) => (
+        <g key={s.x}>
+          <rect x={s.x} y="62" width="170" height="68" rx="8" fill="rgba(20,10,12,0.6)" stroke="rgba(239,68,68,0.18)" />
+          <text x={s.x + 14} y="80" fontFamily="monospace" fontSize="8" fill="#b91c1c" letterSpacing="1">{s.label}</text>
+          <text x={s.x + 14} y="106" fontFamily="serif" fontSize="22" fontWeight="700" fill="#fff">{s.value}</text>
+          <text x={s.x + 14} y="122" fontFamily="monospace" fontSize="8" fill="#94a3b8">{s.sub}</text>
+        </g>
+      ))}
+
+      {/* Usage chart panel */}
+      <rect x="20" y="146" width="500" height="172" rx="10" fill="rgba(20,10,12,0.5)" stroke="rgba(239,68,68,0.15)" />
+      <text x="36" y="168" fontFamily="sans-serif" fontSize="11" fontWeight="600" fill="#fff">Query activity · 7 days</text>
+      <text x="504" y="168" fontFamily="monospace" fontSize="8" fill="#ef4444" textAnchor="end">● LIVE</text>
+
+      {/* Chart grid */}
+      <g transform="translate(36 188)">
+        {[0, 1, 2, 3].map((i) => (
+          <line key={i} x1="0" y1={i * 30} x2="468" y2={i * 30} stroke="#1a1014" strokeWidth="0.5" />
+        ))}
+
+        {/* Smooth red curve (matching dashboard screenshot) */}
+        <path
+          d="M 0 80 C 50 78, 80 70, 110 50 S 170 12, 220 8 S 290 22, 340 50 S 410 88, 468 92"
+          fill="none"
+          stroke="url(#ln-red)"
+          strokeWidth="2.5"
+          strokeLinecap="round"
+        />
+        {/* Filled area under curve */}
+        <path
+          d="M 0 80 C 50 78, 80 70, 110 50 S 170 12, 220 8 S 290 22, 340 50 S 410 88, 468 92 L 468 100 L 0 100 Z"
+          fill="url(#ln-red)"
+          opacity="0.15"
+        />
+
+        {/* Peak data point */}
+        <circle cx="220" cy="8" r="4" fill="#ef4444">
+          <animate attributeName="r" values="4;6;4" dur="2s" repeatCount="indefinite" />
+        </circle>
+        <circle cx="220" cy="8" r="8" fill="none" stroke="#ef4444" strokeOpacity="0.4">
+          <animate attributeName="r" values="6;14;6" dur="2s" repeatCount="indefinite" />
+          <animate attributeName="stroke-opacity" values="0.4;0;0.4" dur="2s" repeatCount="indefinite" />
+        </circle>
+
+        {/* X axis labels */}
+        {['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'].map((d, i) => (
+          <text key={d} x={i * 78} y="120" fontFamily="monospace" fontSize="8" fill="#475569">{d}</text>
+        ))}
+      </g>
+
+      {/* Right side: Usage card */}
+      <rect x="540" y="146" width="244" height="76" rx="10" fill="rgba(20,10,12,0.6)" stroke="rgba(239,68,68,0.2)" />
+      <text x="556" y="166" fontFamily="monospace" fontSize="8" fill="#b91c1c" letterSpacing="1">USAGE</text>
+      <text x="556" y="188" fontFamily="sans-serif" fontSize="14" fontWeight="600" fill="#fff">0 / 15 free queries</text>
+      <rect x="556" y="196" width="212" height="6" rx="3" fill="#1a1014" />
+      <rect x="556" y="196" width="0" height="6" rx="3" fill="url(#ln-red)" />
+      <rect x="556" y="208" width="212" height="0" rx="0" fill="transparent" />
+
+      {/* Upgrade to Pro button */}
+      <rect x="540" y="234" width="244" height="36" rx="8" fill="rgba(239,68,68,0.08)" stroke="rgba(239,68,68,0.4)" />
+      <text x="662" y="256" fontFamily="sans-serif" fontSize="11" fontWeight="600" fill="#fca5a5" textAnchor="middle">Upgrade to Pro ↗</text>
+
+      {/* Provider toggle */}
+      <text x="540" y="290" fontFamily="monospace" fontSize="8" fill="#b91c1c" letterSpacing="1">PROVIDER</text>
+      <rect x="540" y="296" width="60" height="22" rx="11" fill="url(#ln-red)" />
+      <text x="570" y="311" fontFamily="sans-serif" fontSize="9" fontWeight="600" fill="#fff" textAnchor="middle">Groq</text>
+      <rect x="608" y="296" width="62" height="22" rx="11" fill="transparent" stroke="rgba(239,68,68,0.25)" />
+      <text x="639" y="311" fontFamily="sans-serif" fontSize="9" fill="#94a3b8" textAnchor="middle">OpenAI</text>
+
+      {/* Retrieval badge */}
+      <text x="688" y="290" fontFamily="monospace" fontSize="8" fill="#b91c1c" letterSpacing="1">RAG</text>
+      <rect x="688" y="296" width="86" height="22" rx="11" fill="rgba(34,197,94,0.12)" stroke="rgba(34,197,94,0.4)" />
+      <circle cx="700" cy="307" r="3" fill="#22c55e">
+        <animate attributeName="opacity" values="1;0.4;1" dur="1.5s" repeatCount="indefinite" />
+      </circle>
+      <text x="734" y="311" fontFamily="monospace" fontSize="8" fill="#86efac" textAnchor="middle">VECTOR + KW</text>
+
+      {/* Recent documents panel */}
+      <rect x="20" y="334" width="500" height="148" rx="10" fill="rgba(20,10,12,0.5)" stroke="rgba(239,68,68,0.15)" />
+      <text x="36" y="356" fontFamily="serif" fontSize="13" fontWeight="600" fill="#fff">Recent documents</text>
+      <text x="36" y="370" fontFamily="monospace" fontSize="8" fill="#64748b">Last touched files across your workspace</text>
+      <text x="504" y="356" fontFamily="monospace" fontSize="9" fill="#94a3b8" textAnchor="end">⛁ Filter</text>
+
+      {[
+        { name: 'Helios_Annual_Report_2025.pdf', size: 'PDF · 247 pages · 4.2 MB', time: '12m ago' },
+        { name: 'Master_Services_Agreement.pdf', size: 'PDF · 86 pages · 1.8 MB', time: '1h ago' },
+        { name: 'Q3_Financial_Model.docx', size: 'DOCX · 42 pages · 612 KB', time: '3h ago' },
+      ].map((d, i) => (
+        <g key={i} transform={`translate(36 ${386 + i * 30})`}>
+          <rect x="0" y="-10" width="468" height="26" rx="5" fill="rgba(239,68,68,0.04)" />
+          {/* File icon */}
+          <rect x="6" y="-4" width="18" height="22" rx="3" fill="rgba(239,68,68,0.15)" stroke="#ef4444" strokeWidth="0.8" />
+          <text x="15" y="11" fontFamily="monospace" fontSize="7" fontWeight="700" fill="#ef4444" textAnchor="middle">PDF</text>
+          {/* Name + meta */}
+          <text x="36" y="3" fontFamily="sans-serif" fontSize="10" fontWeight="600" fill="#fff">{d.name}</text>
+          <text x="36" y="14" fontFamily="monospace" fontSize="7" fill="#64748b">{d.size}</text>
+          {/* Time */}
+          <text x="320" y="9" fontFamily="monospace" fontSize="8" fill="#94a3b8" textAnchor="end">{d.time}</text>
+          {/* Indexed badge */}
+          <rect x="340" y="-2" width="70" height="18" rx="9" fill="rgba(34,197,94,0.1)" stroke="rgba(34,197,94,0.35)" />
+          <circle cx="352" cy="7" r="2.5" fill="#22c55e" />
+          <text x="378" y="11" fontFamily="monospace" fontSize="8" fill="#86efac" textAnchor="middle">Indexed</text>
+          {/* Open arrow */}
+          <text x="460" y="9" fontFamily="monospace" fontSize="10" fill="#475569" textAnchor="end">↗</text>
+        </g>
+      ))}
+
+      {/* Recent asks panel */}
+      <rect x="540" y="334" width="244" height="148" rx="10" fill="rgba(20,10,12,0.5)" stroke="rgba(239,68,68,0.15)" />
+      <text x="556" y="356" fontFamily="serif" fontSize="13" fontWeight="600" fill="#fff">Recent asks</text>
+      <text x="772" y="356" fontFamily="serif" fontSize="14" fill="#ef4444" textAnchor="end">✦</text>
+
+      {[
+        { q: "What's the YoY revenue change", doc: 'Helios — Annual Report', time: '2m' },
+        { q: 'Summarize indemnification clauses', doc: 'Master Services Agreement', time: '14m' },
+        { q: 'Compare gross margin to last year', doc: 'Q3 Financial Model', time: '1h' },
+      ].map((a, i) => (
+        <g key={i} transform={`translate(556 ${376 + i * 34})`}>
+          <text x="0" y="0" fontFamily="sans-serif" fontSize="9" fontWeight="600" fill="#fff">{a.q}</text>
+          <text x="0" y="14" fontFamily="monospace" fontSize="7" fill="#ef4444">{a.doc}</text>
+          <text x="212" y="0" fontFamily="monospace" fontSize="8" fill="#64748b" textAnchor="end">{a.time}</text>
+        </g>
+      ))}
+
+      {/* Bottom-left: powered by */}
+      <text x="36" y="494" fontFamily="monospace" fontSize="7" fill="#475569">✦ POWERED BY GROQ · LLAMA 3.3 70B</text>
+      <text x="504" y="494" fontFamily="monospace" fontSize="7" fill="#475569" textAnchor="end">SOC 2 · ENCRYPTED · YOURS ALONE</text>
+    </svg>
+  );
+}
+
+// ============================================
 // PROPINTEL — Real estate intelligence (Bloomberg-style)
 // ============================================
 export function PropIntelThumb() {
