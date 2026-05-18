@@ -118,6 +118,26 @@ export const flagshipProjects = [
     gradient: 'cyan',
   },
   {
+    id: 'lumen',
+    name: 'Lumen AI',
+    subtitle: 'Document Intelligence Platform',
+    tagline: '[ INTELLIGENCE · DISTILLED ]',
+    tags: ['Document AI', 'RAG System', 'Multi-Provider LLM'],
+    problem:
+      'Researchers and analysts waste hours manually reading 200-page filings, contracts, and reports — losing context across documents and missing critical insights buried in the noise.',
+    solution:
+      'AI-powered document intelligence workspace — upload PDFs/DOCX, get instant summaries and grounded answers across your library. Multi-provider LLM routing (Groq + OpenAI), hybrid retrieval (keyword + vector match), smart OCR for scanned docs, and SOC 2 compliant encryption.',
+    stack: ['Next.js', 'Groq', 'OpenAI', 'Llama 3.3', 'RAG'],
+    impact: ['Multi-provider AI routing', 'Hybrid keyword + vector RAG', 'Smart OCR + multi-doc context'],
+    link: 'https://lumen-ai-dashboard.vercel.app/',
+    domain: 'lumen-ai-dashboard.vercel.app',
+    gradient: 'red',
+    extraBadges: [
+      { text: '● INDEXED', color: 'green' },
+      { text: '● RAG ACTIVE', color: 'red' },
+    ],
+  },
+  {
     id: 'propintel',
     name: 'PropIntel AI',
     subtitle: 'Real Estate Intelligence',
