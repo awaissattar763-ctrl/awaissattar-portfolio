@@ -5,6 +5,7 @@ const accentByGradient = {
   cyan: '#22d3ee',
   green: '#22c55e',
   gold: '#fbbf24',
+  red: '#ef4444',
 };
 
 function Visual({ project }) {
@@ -68,6 +69,24 @@ function Visual({ project }) {
 function Info({ project, reverse }) {
   const accent = accentByGradient[project.gradient] || '#22d3ee';
 
+  const tagStyleByGradient = {
+    gold: {
+      background: 'rgba(251, 191, 36, 0.08)',
+      borderColor: 'rgba(251, 191, 36, 0.2)',
+      color: '#fbbf24',
+    },
+    green: {
+      background: 'rgba(34, 197, 94, 0.08)',
+      borderColor: 'rgba(34, 197, 94, 0.2)',
+      color: '#22c55e',
+    },
+    red: {
+      background: 'rgba(239, 68, 68, 0.08)',
+      borderColor: 'rgba(239, 68, 68, 0.2)',
+      color: '#ef4444',
+    },
+  };
+
   return (
     <motion.div
       initial={{ opacity: 0, x: reverse ? 40 : -40 }}
@@ -85,21 +104,7 @@ function Info({ project, reverse }) {
           <span
             key={i}
             className="tag"
-            style={
-              project.gradient === 'gold'
-                ? {
-                    background: 'rgba(251, 191, 36, 0.08)',
-                    borderColor: 'rgba(251, 191, 36, 0.2)',
-                    color: '#fbbf24',
-                  }
-                : project.gradient === 'green'
-                ? {
-                    background: 'rgba(34, 197, 94, 0.08)',
-                    borderColor: 'rgba(34, 197, 94, 0.2)',
-                    color: '#22c55e',
-                  }
-                : undefined
-            }
+            style={tagStyleByGradient[project.gradient]}
           >
             {t}
           </span>
