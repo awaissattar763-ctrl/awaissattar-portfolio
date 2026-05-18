@@ -8,6 +8,7 @@ import {
   LumiereThumb,
   BotFlowThumb,
   FinanceProThumb,
+  LumenThumb,
   PropIntelThumb,
 } from './flagship2.jsx';
 import {
@@ -34,6 +35,7 @@ export const flagshipThumbs = {
   lumiere: LumiereThumb,
   botflow: BotFlowThumb,
   finance: FinanceProThumb,
+  lumen: LumenThumb,
   propintel: PropIntelThumb,
 };
 
