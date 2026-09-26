@@ -31,15 +31,24 @@ function Visual({ project }) {
           >
             {project.domain}
           </div>
-          <a
-            href={project.link}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-xs font-mono px-2 py-0.5 rounded transition hover:opacity-80"
-            style={{ color: accent, background: `${accent}15`, border: `1px solid ${accent}33` }}
-          >
-            Live ↗
-          </a>
+          {project.link ? (
+            <a
+              href={project.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-xs font-mono px-2 py-0.5 rounded transition hover:opacity-80"
+              style={{ color: accent, background: `${accent}15`, border: `1px solid ${accent}33` }}
+            >
+              Live ↗
+            </a>
+          ) : (
+            <span
+              className="text-xs font-mono px-2 py-0.5 rounded"
+              style={{ color: '#64748b', background: '#64748b15', border: '1px solid #64748b33' }}
+            >
+              Soon
+            </span>
+          )}
         </div>
 
         {/* The thumbnail itself */}
@@ -157,25 +166,31 @@ function Info({ project, reverse }) {
         </div>
       </div>
 
-      <a
-        href={project.link}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 text-sm font-medium group"
-      >
-        View Live Project
-        <svg
-          width="14"
-          height="14"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth="2"
-          className="group-hover:translate-x-1 transition"
+      {project.link ? (
+        <a
+          href={project.link}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 text-sm font-medium group"
         >
-          <path d="M7 17L17 7M17 7H7M17 7v10" />
-        </svg>
-      </a>
+          View Live Project
+          <svg
+            width="14"
+            height="14"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            className="group-hover:translate-x-1 transition"
+          >
+            <path d="M7 17L17 7M17 7H7M17 7v10" />
+          </svg>
+        </a>
+      ) : (
+        <span className="inline-flex items-center gap-2 text-slate-500 text-sm font-medium">
+          Live demo deploying soon
+        </span>
+      )}
     </motion.div>
   );
 }

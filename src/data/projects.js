@@ -1,6 +1,48 @@
 // Flagship projects — full case study cards
 export const flagshipProjects = [
   {
+    id: 'ai-receptionist',
+    name: 'Nora — AI Receptionist',
+    subtitle: 'AI Front Desk for Local Businesses',
+    tagline: '[ CONCEPT DEMO ]',
+    tags: ['Concept Demo', 'AI Chatbot', 'Appointments'],
+    conceptDemo: true,
+    problem:
+      'Most small businesses miss after-hours calls — and most callers never call back.',
+    solution:
+      'Concept demo of an AI receptionist for a dental clinic: answers FAQs, books and reschedules appointments, detects emergencies and escalates to the owner. Simulated conversations in a browser demo — no live telephony.',
+    stack: ['Next.js', 'React', 'Tailwind CSS'],
+    impact: ['Booking + reschedule flow', 'Emergency escalation path', 'Owner call-log dashboard'],
+    link: null,
+    domain: 'live demo link — deploying soon',
+    gradient: 'cyan',
+    extraBadges: [
+      { text: '● CONCEPT DEMO', color: 'cyan' },
+      { text: '● SIMULATED', color: 'green' },
+    ],
+  },
+  {
+    id: 'lead-pipeline',
+    name: 'Lead Pipeline Automation',
+    subtitle: 'n8n Workflow + Live Demo',
+    tagline: '[ CONCEPT DEMO + N8N ]',
+    tags: ['Concept Demo', 'n8n', 'CRM Automation'],
+    conceptDemo: true,
+    problem:
+      'New inquiries go cold when follow-up is manual — hot leads slip through within hours.',
+    solution:
+      'Concept demo plus a real import-ready n8n workflow: scores every lead with transparent rules, routes hot leads to instant follow-up and Slack alerts, and logs everything to the CRM.',
+    stack: ['Next.js', 'n8n', 'Tailwind CSS'],
+    impact: ['Transparent lead scoring', 'Import-ready n8n workflow', 'Hot-lead Slack alerts'],
+    link: null,
+    domain: 'live demo link — deploying soon',
+    gradient: 'green',
+    extraBadges: [
+      { text: '● CONCEPT DEMO', color: 'green' },
+      { text: '● 21-NODE WORKFLOW', color: 'cyan' },
+    ],
+  },
+  {
     id: 'openclaw',
     name: 'OpenClaw AI',
     subtitle: 'Enterprise AI Infrastructure',
