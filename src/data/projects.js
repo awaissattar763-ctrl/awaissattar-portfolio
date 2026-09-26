@@ -13,8 +13,8 @@ export const flagshipProjects = [
       'Concept demo of an AI receptionist for a dental clinic: answers FAQs, books and reschedules appointments, detects emergencies and escalates to the owner. Simulated conversations in a browser demo — no live telephony.',
     stack: ['Next.js', 'React', 'Tailwind CSS'],
     impact: ['Booking + reschedule flow', 'Emergency escalation path', 'Owner call-log dashboard'],
-    link: null,
-    domain: 'live demo link — deploying soon',
+    link: 'https://awaissattar763-ctrl.github.io/ai-receptionist-dental/',
+    domain: 'awaissattar763-ctrl.github.io/ai-receptionist-dental',
     gradient: 'cyan',
     extraBadges: [
       { text: '● CONCEPT DEMO', color: 'cyan' },
@@ -34,8 +34,8 @@ export const flagshipProjects = [
       'Concept demo plus a real import-ready n8n workflow: scores every lead with transparent rules, routes hot leads to instant follow-up and Slack alerts, and logs everything to the CRM.',
     stack: ['Next.js', 'n8n', 'Tailwind CSS'],
     impact: ['Transparent lead scoring', 'Import-ready n8n workflow', 'Hot-lead Slack alerts'],
-    link: null,
-    domain: 'live demo link — deploying soon',
+    link: 'https://awaissattar763-ctrl.github.io/lead-pipeline-automation/',
+    domain: 'awaissattar763-ctrl.github.io/lead-pipeline-automation',
     gradient: 'green',
     extraBadges: [
       { text: '● CONCEPT DEMO', color: 'green' },
