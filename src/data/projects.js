@@ -64,6 +64,27 @@ export const flagshipProjects = [
     ],
   },
   {
+    id: 'voice-ai-receptionist',
+    name: 'Voice AI Receptionist',
+    subtitle: 'AI Phone Agent for Clinics',
+    tagline: '[ CONCEPT DEMO ]',
+    tags: ['Concept Demo', 'Voice AI', 'Call Automation'],
+    conceptDemo: true,
+    problem:
+      'After-hours and weekend calls go unanswered — most callers never call back, and emergencies get no triage.',
+    solution:
+      'Concept demo of an AI phone receptionist for a fictional dental clinic: simulated live calls with real-time transcripts — daytime booking plus after-hours emergency escalation — and an admin dashboard with call logs, outcome tags, and follow-up flags. Shows how a Twilio + ElevenLabs + Supabase voice pipeline would be wired in production. No real calls placed.',
+    stack: ['Next.js', 'React', 'Tailwind CSS'],
+    impact: ['Simulated live-call transcripts', 'Emergency escalation flow', 'Call-log admin dashboard'],
+    link: 'https://awaissattar763-ctrl.github.io/voice-ai-receptionist/',
+    domain: 'awaissattar763-ctrl.github.io/voice-ai-receptionist',
+    gradient: 'cyan',
+    extraBadges: [
+      { text: '● CONCEPT DEMO', color: 'cyan' },
+      { text: '● SIMULATED', color: 'green' },
+    ],
+  },
+  {
     id: 'openclaw',
     name: 'OpenClaw AI',
     subtitle: 'Enterprise AI Infrastructure',
