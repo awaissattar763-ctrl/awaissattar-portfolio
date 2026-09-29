@@ -43,6 +43,27 @@ export const flagshipProjects = [
     ],
   },
   {
+    id: 'crm-ai',
+    name: 'SyncCRM AI',
+    subtitle: 'AI-Enriched CRM Integration',
+    tagline: '[ CONCEPT DEMO ]',
+    tags: ['Concept Demo', 'CRM', 'AI Scoring'],
+    conceptDemo: true,
+    problem:
+      "Small-business CRMs go stale: duplicate contacts pile up, nobody scores leads consistently, and follow-up emails never get written.",
+    solution:
+      'Concept demo of an AI layer on a small-business CRM: transparent AI lead scoring with explained reasons, one-click duplicate detection and merge, auto-drafted follow-up emails in three tones, and a live pipeline-sync activity feed. Fully simulated in the browser.',
+    stack: ['Next.js', 'React', 'Tailwind CSS'],
+    impact: ['Transparent AI lead scoring', 'Duplicate detection + merge', 'Auto-drafted follow-ups'],
+    link: 'https://awaissattar763-ctrl.github.io/crm-ai-integration/',
+    domain: 'awaissattar763-ctrl.github.io/crm-ai-integration',
+    gradient: 'gold',
+    extraBadges: [
+      { text: '● CONCEPT DEMO', color: 'gold' },
+      { text: '● SIMULATED', color: 'green' },
+    ],
+  },
+  {
     id: 'openclaw',
     name: 'OpenClaw AI',
     subtitle: 'Enterprise AI Infrastructure',
