@@ -85,6 +85,27 @@ export const flagshipProjects = [
     ],
   },
   {
+    id: 'n8n-showcase',
+    name: 'n8n Automation Showcase',
+    subtitle: 'Watch a Real Workflow Run',
+    tagline: '[ CONCEPT DEMO + N8N ]',
+    tags: ['Concept Demo', 'n8n', 'Automation'],
+    conceptDemo: true,
+    problem:
+      'Automation sellers show screenshots — buyers cannot tell whether the workflow actually works.',
+    solution:
+      'Interactive showcase of a real, import-ready n8n lead workflow: submit a sample lead and watch every node fire in order — capture, transparent 0–100 scoring, CRM save, automatic follow-ups, and an instant Slack alert for hot leads. The downloadable workflow.json is genuine and imports into n8n as-is.',
+    stack: ['Next.js', 'n8n', 'Tailwind CSS'],
+    impact: ['Live node-by-node execution', 'Transparent scoring rules', 'Real import-ready workflow.json'],
+    link: 'https://awaissattar763-ctrl.github.io/n8n-automation-showcase/',
+    domain: 'awaissattar763-ctrl.github.io/n8n-automation-showcase',
+    gradient: 'green',
+    extraBadges: [
+      { text: '● CONCEPT DEMO', color: 'green' },
+      { text: '● REAL WORKFLOW', color: 'cyan' },
+    ],
+  },
+  {
     id: 'openclaw',
     name: 'OpenClaw AI',
     subtitle: 'Enterprise AI Infrastructure',
