@@ -1,6 +1,27 @@
 // Flagship projects — full case study cards
 export const flagshipProjects = [
   {
+    id: 'automation-blueprints',
+    name: 'Automation Blueprints',
+    subtitle: 'n8n · Make · Zapier · Vapi Voice — Import-Ready Templates',
+    tagline: '[ TEMPLATES + GUIDES ]',
+    tags: ['n8n', 'Make', 'Zapier', 'Vapi', 'Voice AI'],
+    conceptDemo: false,
+    problem:
+      'Service businesses buy outcomes, not tools — but every prospect runs a different stack.',
+    solution:
+      'A library of import-ready automation templates covering all four major platforms: 2 n8n workflows (missed-call → SMS → CRM; AI lead scoring → smart follow-up), 2 Make blueprints (Facebook leads → instant SMS; AI lead qualification), 2 Zapier build guides (instant lead SMS; automatic review requests), and a complete Vapi voice-receptionist config with a Twilio setup guide — including a 60-second client demo script. Free tiers cover everything; total trial cost $0.',
+    stack: ['n8n', 'Make', 'Zapier', 'Vapi', 'Twilio', 'OpenAI'],
+    impact: ['2 n8n workflows', '2 Make blueprints', 'Voice AI receptionist config'],
+    link: 'https://github.com/awaissattar763-ctrl/automation-blueprints',
+    domain: 'github.com/awaissattar763-ctrl/automation-blueprints',
+    gradient: 'green',
+    extraBadges: [
+      { text: '● IMPORT-READY', color: 'green' },
+      { text: '● $0 TO TRY', color: 'cyan' },
+    ],
+  },
+  {
     id: 'ghl-summit-air',
     name: 'Summit Air & Plumbing',
     subtitle: 'GoHighLevel CRM + Automation — HVAC & Plumbing',
