@@ -41,10 +41,11 @@ export default function Hero() {
 
             <Reveal direction="up" delay={0.3}>
               <p className="text-lg text-slate-400 max-w-xl leading-relaxed mb-10">
-                I'm <span className="text-white font-medium">Muhammad Awais Sattar</span> — a Full-Stack
-                Developer specializing in <span className="text-cyan-400">enterprise dashboards</span>,
-                AI-powered admin systems, and ERP/CRM platforms. From WhatsApp automation to real estate
-                intelligence — I ship serious production-grade SaaS.
+                I'm <span className="text-white font-medium">Muhammad Awais Sattar</span> — I build{' '}
+                <span className="text-cyan-400">AI receptionists</span> and{' '}
+                <span className="text-cyan-400">GoHighLevel automations</span> that turn missed calls into
+                booked jobs for service businesses. Next.js, Supabase, n8n, and voice AI — from first
+                click to confirmed booking.
               </p>
             </Reveal>
 

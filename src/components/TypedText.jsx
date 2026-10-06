@@ -1,10 +1,10 @@
 import { useEffect, useState } from 'react';
 
 const phrases = [
-  'AI SaaS platforms',
-  'enterprise dashboards',
-  'ERP & CRM systems',
-  'automation tools',
+  'GoHighLevel automations',
+  'AI receptionists',
+  'lead pipelines that book jobs',
+  'missed-call text-back systems',
   'AI-integrated apps',
 ];
 
