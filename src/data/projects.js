@@ -1,6 +1,86 @@
 // Flagship projects — full case study cards
 export const flagshipProjects = [
   {
+    id: 'ghl-summit-air',
+    name: 'Summit Air & Plumbing',
+    subtitle: 'GoHighLevel CRM + Automation — HVAC & Plumbing',
+    tagline: '[ GHL DEMO ENVIRONMENT ]',
+    tags: ['GoHighLevel', 'CRM', 'Automation', 'Demo'],
+    conceptDemo: true,
+    problem:
+      'Home-service businesses lose jobs to slow follow-up: estimates requested after hours go cold by morning.',
+    solution:
+      'Demo GoHighLevel environment for a fictional HVAC/plumbing company: 6-stage Job Pipeline (New Lead → Job Won), 3 custom contact fields, a Free Estimate form, and 5 staged automations — instant lead response, missed-call text-back, estimate confirmation + reminders, estimate win-back, and seasonal nurture. Workflows staged as drafts; no live sending.',
+    stack: ['GoHighLevel', 'Pipelines', 'Workflows', 'Smart Forms'],
+    impact: ['6-stage job pipeline', '5 staged automations', 'Missed-call text-back flow'],
+    domain: 'GoHighLevel sub-account demo',
+    gradient: 'cyan',
+    extraBadges: [
+      { text: '● GHL DEMO', color: 'cyan' },
+      { text: '● STAGED — NOT LIVE', color: 'green' },
+    ],
+  },
+  {
+    id: 'ghl-brightsmile',
+    name: 'BrightSmile Dental Studio',
+    subtitle: 'GoHighLevel CRM + Automation — Dental Clinic',
+    tagline: '[ GHL DEMO ENVIRONMENT ]',
+    tags: ['GoHighLevel', 'Dental', 'Automation', 'Demo'],
+    conceptDemo: true,
+    problem:
+      'Dental clinics bleed revenue on no-shows and dormant patients who never get recalled.',
+    solution:
+      'Demo GoHighLevel environment for a fictional dental studio: 6-stage Patient Pipeline, a Book Appointment form with SMS consent, and 6 staged patient-journey automations — 6-month hygiene recall, appointment reminders, dormant patient reactivation, instant lead response, missed-call text-back, and review requests. Workflows staged as drafts; no live sending.',
+    stack: ['GoHighLevel', 'Pipelines', 'Workflows', 'Smart Forms'],
+    impact: ['6 patient-journey automations', 'Hygiene recall + reactivation flows', 'Review request automation'],
+    domain: 'GoHighLevel sub-account demo',
+    gradient: 'green',
+    extraBadges: [
+      { text: '● GHL DEMO', color: 'green' },
+      { text: '● STAGED — NOT LIVE', color: 'cyan' },
+    ],
+  },
+  {
+    id: 'ghl-glowmed',
+    name: 'GlowMed Aesthetics',
+    subtitle: 'GoHighLevel CRM + Automation — Med Spa',
+    tagline: '[ GHL DEMO ENVIRONMENT ]',
+    tags: ['GoHighLevel', 'Med Spa', 'Automation', 'Demo'],
+    conceptDemo: true,
+    problem:
+      'Med spas lose high-value bookings to no-shows and never rebook aesthetic treatments on time.',
+    solution:
+      'Demo GoHighLevel environment for a fictional aesthetics clinic: dual pipelines (5-stage Marketing + 6-stage Treatment), a 9-field consultation form with treatment and timeline qualification, and 5 staged automations — 90-day Botox rebook reminders, appointment reminders, instant lead response, no-show win-back, and post-appointment review requests. Test contacts only; workflows staged as drafts.',
+    stack: ['GoHighLevel', 'Pipelines', 'Workflows', 'Smart Forms'],
+    impact: ['Dual marketing + treatment pipelines', 'Treatment-qualified intake form', 'No-show win-back sequence'],
+    domain: 'GoHighLevel sub-account demo',
+    gradient: 'gold',
+    extraBadges: [
+      { text: '● GHL DEMO', color: 'gold' },
+      { text: '● STAGED — NOT LIVE', color: 'green' },
+    ],
+  },
+  {
+    id: 'ghl-sterling-law',
+    name: 'Sterling Injury Law',
+    subtitle: 'GoHighLevel CRM + Automation — Law Firm',
+    tagline: '[ GHL DEMO ENVIRONMENT ]',
+    tags: ['GoHighLevel', 'Legal', 'Automation', 'Demo'],
+    conceptDemo: true,
+    problem:
+      'Law firms lose cases when intake is slow — accident leads call five firms and sign with whoever answers first.',
+    solution:
+      'Demo GoHighLevel environment for a fictional injury law firm: 6-stage Case Pipeline (New Lead → Retainer Signed), a 9-field Free Case Evaluation form qualifying accident type, timing, and injury severity, and 5 staged automations — 24/7 instant intake, consultation booking + reminders, long-term nurture, missed-call text-back, and review + referral requests. Workflows staged as drafts; no live sending.',
+    stack: ['GoHighLevel', 'Pipelines', 'Workflows', 'Smart Forms'],
+    impact: ['6-stage case pipeline', 'Accident-qualified intake form', '24/7 instant intake flow'],
+    domain: 'GoHighLevel sub-account demo',
+    gradient: 'red',
+    extraBadges: [
+      { text: '● GHL DEMO', color: 'red' },
+      { text: '● STAGED — NOT LIVE', color: 'cyan' },
+    ],
+  },
+  {
     id: 'ai-receptionist',
     name: 'Nora — AI Receptionist',
     subtitle: 'AI Front Desk for Local Businesses',
