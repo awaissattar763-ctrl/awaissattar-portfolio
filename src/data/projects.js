@@ -219,8 +219,8 @@ export const flagshipProjects = [
       'Concept demo of a WhatsApp Business AI chatbot: interactive menu/catalog cards, table booking with availability checks, hours/location answers, delivery orders, after-hours request queuing, and staff handoff with full transcript. Simulated in a WhatsApp-styled chat UI, backed by a real import-ready n8n workflow (WA webhook → intent router → LLM → reply → Sheets log).',
     stack: ['JavaScript', 'n8n', 'OpenAI', 'WhatsApp Business API'],
     impact: ['Menu/catalog + booking flows', 'After-hours auto-queuing', 'Import-ready n8n workflow'],
-    link: 'https://awaissattar763-ctrl.github.io/whatsapp-ai-chatbot/',
-    domain: 'awaissattar763-ctrl.github.io/whatsapp-ai-chatbot',
+    link: 'https://awaissattar763-ctrl.github.io/wa-ai-chatbot-demo/',
+    domain: 'awaissattar763-ctrl.github.io/wa-ai-chatbot-demo',
     gradient: 'green',
     extraBadges: [
       { text: '● CONCEPT DEMO', color: 'green' },
