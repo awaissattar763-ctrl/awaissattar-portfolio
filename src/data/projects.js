@@ -207,6 +207,27 @@ export const flagshipProjects = [
     ],
   },
   {
+    id: 'whatsapp-ai-chatbot',
+    name: 'WhatsApp AI Chatbot',
+    subtitle: 'n8n + AI Chatbot for WhatsApp Business',
+    tagline: '[ CONCEPT DEMO + N8N ]',
+    tags: ['Concept Demo', 'WhatsApp', 'AI Chatbot', 'n8n'],
+    conceptDemo: true,
+    problem:
+      'Small businesses drown in repetitive WhatsApp chats — menu questions, booking requests, hours — and slow replies lose customers to whoever answers first.',
+    solution:
+      'Concept demo of a WhatsApp Business AI chatbot: interactive menu/catalog cards, table booking with availability checks, hours/location answers, delivery orders, after-hours request queuing, and staff handoff with full transcript. Simulated in a WhatsApp-styled chat UI, backed by a real import-ready n8n workflow (WA webhook → intent router → LLM → reply → Sheets log).',
+    stack: ['JavaScript', 'n8n', 'OpenAI', 'WhatsApp Business API'],
+    impact: ['Menu/catalog + booking flows', 'After-hours auto-queuing', 'Import-ready n8n workflow'],
+    link: 'https://awaissattar763-ctrl.github.io/whatsapp-ai-chatbot/',
+    domain: 'awaissattar763-ctrl.github.io/whatsapp-ai-chatbot',
+    gradient: 'green',
+    extraBadges: [
+      { text: '● CONCEPT DEMO', color: 'green' },
+      { text: '● REAL WORKFLOW', color: 'cyan' },
+    ],
+  },
+  {
     id: 'openclaw',
     name: 'OpenClaw AI',
     subtitle: 'Enterprise AI Infrastructure',
