@@ -1,6 +1,27 @@
 // Flagship projects — full case study cards
 export const flagshipProjects = [
   {
+    id: 'swiftpos',
+    name: 'SwiftPOS',
+    subtitle: 'Complete Retail POS System',
+    tagline: '[ LIVE PROJECT ]',
+    tags: ['Next.js', 'Supabase', 'PostgreSQL', 'POS'],
+    conceptDemo: false,
+    problem:
+      'Small retail stores need one connected system for billing, stock, returns and reporting — most off-the-shelf POS tools are expensive or overkill.',
+    solution:
+      'My own original build of a complete working POS on a real Supabase backend: SKU/barcode billing with Cash/Card/Digital tenders, inventory with low-stock alerts, returns with automatic stock adjustment, sales/profit/expense/inventory reports, role-based access (Admin/Manager/Cashier) enforced in the UI and in Postgres RLS, an offline sales outbox with auto-sync, and JSON backup/restore. Demo logins are shown on the login screen; the store and all figures are fictional demo data.',
+    stack: ['Next.js', 'TypeScript', 'Supabase', 'PostgreSQL', 'Tailwind CSS'],
+    impact: ['Real Supabase Auth + RLS roles', 'Offline sales outbox', 'Full reporting suite'],
+    link: 'https://awaissattar763-ctrl.github.io/swiftpos/',
+    domain: 'awaissattar763-ctrl.github.io/swiftpos',
+    gradient: 'green',
+    extraBadges: [
+      { text: '● LIVE DEMO', color: 'green' },
+      { text: '● SUPABASE', color: 'cyan' },
+    ],
+  },
+  {
     id: 'automation-blueprints',
     name: 'Automation Blueprints',
     subtitle: 'n8n · Make · Zapier · Vapi Voice — Import-Ready Templates',
