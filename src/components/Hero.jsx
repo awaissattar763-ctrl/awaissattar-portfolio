@@ -25,9 +25,9 @@ export default function Hero() {
               </div>
             </Reveal>
 
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-[1.0] mb-8">
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-[1.02] mb-8">
               <Reveal direction="up">
-                <span className="gradient-text">Building</span>
+                <span className="text-white">I build</span>
               </Reveal>
               <Reveal direction="up" delay={0.1}>
                 <div className="my-1">
@@ -35,30 +35,32 @@ export default function Hero() {
                 </div>
               </Reveal>
               <Reveal direction="up" delay={0.2}>
-                <span className="gradient-text">at production scale.</span>
+                <span className="text-white">that win customers</span>{' '}
+                <span className="gradient-text">while you sleep.</span>
               </Reveal>
             </h1>
 
             <Reveal direction="up" delay={0.3}>
               <p className="text-lg text-slate-400 max-w-xl leading-relaxed mb-10">
-                I'm <span className="text-white font-medium">Muhammad Awais Sattar</span> — I build{' '}
-                <span className="text-cyan-400">AI receptionists</span> and{' '}
-                <span className="text-cyan-400">GoHighLevel automations</span> that turn missed calls into
-                booked jobs for service businesses. Next.js, Supabase, n8n, and voice AI — from first
-                click to confirmed booking.
+                I'm <span className="text-white font-medium">Muhammad Awais Sattar</span> — an AI SaaS
+                engineer for service businesses. <span className="text-cyan-400">AI receptionists</span>{' '}
+                that never miss a call, <span className="text-cyan-400">GoHighLevel pipelines</span>{' '}
+                that follow up automatically, and <span className="text-cyan-400">custom dashboards</span>{' '}
+                that run your operations. Next.js, Supabase, n8n, voice AI — designed, built, and
+                deployed.
               </p>
             </Reveal>
 
             <Reveal direction="up" delay={0.4}>
               <div className="flex flex-wrap items-center gap-4 mb-12">
-                <a href="#work" className="btn-primary px-7 py-3.5 rounded-lg text-sm flex items-center gap-2">
-                  <span>View Selected Work</span>
+                <a href="#work" className="btn-primary px-8 py-4 rounded-xl text-sm font-semibold flex items-center gap-2 shadow-lg shadow-cyan-500/20 hover:shadow-cyan-500/30 transition-shadow">
+                  <span>See What I've Built</span>
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
                     <path d="M5 12h14M12 5l7 7-7 7" />
                   </svg>
                 </a>
-                <a href="#contact" className="btn-ghost px-7 py-3.5 rounded-lg text-sm text-white">
-                  Start a Project →
+                <a href="#contact" className="btn-ghost px-8 py-4 rounded-xl text-sm font-medium text-white border border-white/15 hover:border-cyan-400/40 hover:bg-white/5 transition-all">
+                  Book a Free Strategy Call →
                 </a>
               </div>
             </Reveal>
@@ -66,10 +68,10 @@ export default function Hero() {
             <Reveal direction="up" delay={0.5}>
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                 {[
-                  { count: 30, label: 'SaaS Systems' },
-                  { count: 12, label: 'AI Integrations' },
-                  { count: 8, label: 'Business Niches' },
-                  { count: 100, label: 'Responsive', suffix: '%', cyan: true },
+                  { count: 20, label: 'Projects Shipped' },
+                  { count: 8, label: 'AI Integrations' },
+                  { count: 10, label: 'Business Niches' },
+                  { count: 100, label: 'Client Focus', suffix: '%', cyan: true },
                 ].map((s, i) => (
                   <div key={i} className="glass rounded-xl p-4">
                     <div className={`stat-num text-3xl md:text-4xl mb-1 ${s.cyan ? 'cyan-text' : 'text-white'}`}>

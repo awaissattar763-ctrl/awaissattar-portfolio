@@ -1,11 +1,11 @@
 import { useEffect, useState } from 'react';
 
 const phrases = [
-  'GoHighLevel automations',
   'AI receptionists',
-  'lead pipelines that book jobs',
-  'missed-call text-back systems',
-  'AI-integrated apps',
+  'GoHighLevel automations',
+  'booking pipelines',
+  'voice AI systems',
+  'SaaS dashboards',
 ];
 
 export default function TypedText() {

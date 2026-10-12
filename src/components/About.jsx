@@ -22,22 +22,23 @@ export default function About() {
         <div className="grid lg:grid-cols-12 gap-12">
           <Reveal direction="left" className="lg:col-span-7 space-y-5 text-slate-300 text-lg leading-relaxed">
             <p>
-              I'm <span className="text-white font-medium">Muhammad Awais Sattar</span>, based in Khanewal,
-              Pakistan. I specialize in building production-grade SaaS dashboards, AI-integrated admin
-              systems, and end-to-end business platforms.
+              I'm <span className="text-white font-medium">Muhammad Awais Sattar</span>, an AI SaaS
+              engineer based in Pakistan, working with clients worldwide. I build the systems that
+              service businesses run on — <span className="text-cyan-400">AI receptionists</span> that
+              answer every call, <span className="text-cyan-400">automation pipelines</span> that follow
+              up instantly, and <span className="text-cyan-400">dashboards</span> that turn chaos into clarity.
             </p>
             <p>
-              My work spans 8+ industries — from{' '}
-              <span className="text-cyan-400">real estate intelligence</span> to restaurant operations,
-              from <span className="text-cyan-400">WhatsApp automation</span> to school management
-              systems. I've shipped 30+ SaaS systems with AI integrations across Claude, OpenAI, Groq,
-              and Llama.
+              My portfolio spans 10+ business verticals — real estate, dental, legal, home services,
+              retail, education, fitness, hospitality. Every project is a working system with real
+              backend logic, not a mockup: Supabase Auth, PostgreSQL, n8n workflows, voice AI.
             </p>
             <p className="text-slate-400">
-              I don't ship template-style projects. Every build is engineered around real business
-              workflows, with the architectural discipline of someone who understands that{' '}
+              I don't do template work. Each build starts from your actual workflow — how leads come
+              in, where they slip through, what your team touches daily — and the software is
+              engineered around that reality.{' '}
               <span className="text-cyan-400 italic">
-                "frontend" is just the surface — products are systems.
+                Frontend is the surface. Products are systems.
               </span>
             </p>
           </Reveal>
@@ -46,18 +47,18 @@ export default function About() {
             <div className="grid grid-cols-2 gap-3">
               <div className="glass-cyan rounded-xl p-5">
                 <div className="text-xs font-mono text-cyan-400 mb-1">SPECIALIZATIONS</div>
-                <div className="text-white font-semibold text-sm">AI SaaS Platforms</div>
-                <div className="text-xs text-slate-500 mt-1">ERP · CRM · Admin Panels</div>
+                <div className="text-white font-semibold text-sm">AI SaaS & Automation</div>
+                <div className="text-xs text-slate-500 mt-1">Receptionists · Pipelines · Dashboards</div>
               </div>
               <div className="glass-cyan rounded-xl p-5">
                 <div className="text-xs font-mono text-cyan-400 mb-1">INDUSTRIES</div>
-                <div className="text-white font-semibold text-sm">8+ Verticals</div>
-                <div className="text-xs text-slate-500 mt-1">EdTech · FinTech · PropTech</div>
+                <div className="text-white font-semibold text-sm">10+ Verticals</div>
+                <div className="text-xs text-slate-500 mt-1">Dental · Legal · Home Services</div>
               </div>
               <div className="glass-cyan rounded-xl p-5">
                 <div className="text-xs font-mono text-cyan-400 mb-1">AI MODELS</div>
                 <div className="text-white font-semibold text-sm">Claude · OpenAI</div>
-                <div className="text-xs text-slate-500 mt-1">Groq · Llama 3</div>
+                <div className="text-xs text-slate-500 mt-1">Groq · Llama 3 · ElevenLabs</div>
               </div>
               <div className="glass-cyan rounded-xl p-5">
                 <div className="text-xs font-mono text-cyan-400 mb-1">LANGUAGES</div>

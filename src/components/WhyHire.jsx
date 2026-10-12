@@ -3,8 +3,8 @@ import Reveal from './Reveal';
 
 const whyItems = [
   {
-    title: 'Fast, Predictable Delivery',
-    body: 'Most MVPs ship in 2–4 weeks. I work in clear milestones with daily updates, not radio silence.',
+    title: 'You Get a Working System, Not a Mockup',
+    body: 'Every project ships with real auth, real database, and real deployment. If it\'s in my portfolio, it runs.',
     icon: (
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
         <polyline points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
@@ -12,8 +12,8 @@ const whyItems = [
     ),
   },
   {
-    title: 'Premium UI Quality',
-    body: 'Dashboards that look like real funded SaaS, not template clones. Clients close enterprise deals with my UI.',
+    title: 'Built for Your Workflow, Not a Template',
+    body: 'I study how your business actually operates — then engineer the software around it. No generic clones.',
     icon: (
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
         <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z" />
@@ -21,8 +21,8 @@ const whyItems = [
     ),
   },
   {
-    title: 'Production-Ready Code',
-    body: 'Deployed on Vercel/Netlify on day one. Real auth, real database, real responsive design.',
+    title: 'AI That Understands Your Business',
+    body: 'Claude, OpenAI, Groq — I build assistants that read your actual data, not chatbots that guess.',
     icon: (
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
         <path d="M22 11.08V12a10 10 0 11-5.93-9.14" />
@@ -31,8 +31,8 @@ const whyItems = [
     ),
   },
   {
-    title: 'AI Integration Expertise',
-    body: "Claude, OpenAI, Groq, Llama — I've shipped context-aware AI assistants that understand business data.",
+    title: 'Missed Calls Become Booked Jobs',
+    body: 'AI receptionists and instant follow-up automations mean no lead waits, no lead goes cold.',
     icon: (
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
         <circle cx="12" cy="12" r="3" />
@@ -41,8 +41,8 @@ const whyItems = [
     ),
   },
   {
-    title: 'Real Workflow Understanding',
-    body: "I've built for schools, gyms, restaurants, law firms, mandis, salons — industry-specific operations.",
+    title: 'Clear Milestones, No Surprises',
+    body: 'Fixed scope, fixed timeline, daily updates. You always know exactly where your project stands.',
     icon: (
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
         <rect x="3" y="3" width="18" height="18" rx="2" />
@@ -53,8 +53,8 @@ const whyItems = [
     ),
   },
   {
-    title: 'Bilingual Communication',
-    body: 'English, Urdu, Roman Urdu — clear communication in whatever language your team operates in.',
+    title: 'Direct Communication, Your Language',
+    body: 'English, Urdu, or Roman Urdu — fast responses, zero jargon, straight answers.',
     icon: (
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
         <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z" />
