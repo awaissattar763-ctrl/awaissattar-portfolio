@@ -20,7 +20,7 @@ export default function Hero() {
               <div className="flex items-center gap-2 mb-8">
                 <span className="live-dot" />
                 <span className="text-xs font-mono text-slate-400 tracking-wider uppercase">
-                  Available for new projects · Q2 2026
+                  Available for new projects · Q4 2026
                 </span>
               </div>
             </Reveal>
