@@ -45,16 +45,16 @@ export const flagshipProjects = [
   {
     id: 'ghl-summit-air',
     name: 'Summit Air & Plumbing',
-    subtitle: 'GoHighLevel CRM + Automation — HVAC & Plumbing',
+    subtitle: 'GHL Lead Machine — Complete CRM & Automation',
     tagline: '[ GHL DEMO ENVIRONMENT ]',
-    tags: ['GoHighLevel', 'CRM', 'Automation', 'Demo'],
+    tags: ['GoHighLevel', 'CRM', 'Automation', 'Workflows', 'Home Services'],
     conceptDemo: true,
     problem:
-      'Home-service businesses lose jobs to slow follow-up: estimates requested after hours go cold by morning.',
+      'Home-service businesses lose jobs to slow follow-up: after-hours estimates go cold by morning, and happy customers never leave reviews.',
     solution:
-      'Demo GoHighLevel environment for a fictional HVAC/plumbing company: 6-stage Job Pipeline (New Lead → Job Won), 3 custom contact fields, a Free Estimate form, and 5 staged automations — instant lead response, missed-call text-back, estimate confirmation + reminders, estimate win-back, and seasonal nurture. Workflows staged as drafts; no live sending.',
+      'Complete GoHighLevel CRM & automation system for a home-services (HVAC/plumbing) business: 6-stage Job Pipeline (New Lead → Review Requested), 5 automated workflows — missed-call text-back, instant lead response, estimate win-back, seasonal nurture, and review requests — plus custom contact fields and a branded sub-account. Honestly labeled demo environment; not a client deployment.',
     stack: ['GoHighLevel', 'Pipelines', 'Workflows', 'Smart Forms'],
-    impact: ['6-stage job pipeline', '5 staged automations', 'Missed-call text-back flow'],
+    impact: ['6-stage job pipeline', '5 automated workflows', 'Review-request automation'],
     domain: 'GoHighLevel sub-account demo',
     gradient: 'cyan',
     extraBadges: [

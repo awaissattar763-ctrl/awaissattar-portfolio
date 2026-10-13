@@ -123,39 +123,39 @@ export function AutomationBlueprintsThumb() {
 // GHL — SUMMIT AIR & PLUMBING (HVAC)
 // ============================================
 export function GhlSummitThumb() {
-  const stages = ['New Lead', 'Estimate', 'Scheduled', 'Job Done', 'Won'];
+  const stages = ['New Lead', 'Estimate', 'Scheduled', 'Job Done', 'Won', 'Review'];
   return (
     <svg {...baseSvgProps}>
       <defs>
         <linearGradient id="gh-bg" x1="0" y1="0" x2="1" y2="1">
-          <stop offset="0" stopColor="#0b1220" />
-          <stop offset="1" stopColor="#060a14" />
+          <stop offset="0" stopColor="#1a3a5c" />
+          <stop offset="1" stopColor="#0d1f36" />
         </linearGradient>
       </defs>
       <rect width="800" height="500" fill="url(#gh-bg)" />
-      <rect x="0" y="0" width="800" height="64" fill="#0d1526" />
+      <rect x="0" y="0" width="800" height="64" fill="#122a47" />
       <text x="32" y="40" fontFamily="sans-serif" fontSize="18" fontWeight="800" fill="#fff">Summit Air &amp; Plumbing</text>
-      <text x="640" y="40" fontFamily="monospace" fontSize="11" fill="#fb923c">GHL DEMO</text>
+      <text x="600" y="40" fontFamily="monospace" fontSize="11" fill="#ff6b35">GHL LEAD MACHINE</text>
       <text x="32" y="110" fontFamily="sans-serif" fontSize="13" fontWeight="700" fill="#94a3b8">JOB PIPELINE</text>
       {stages.map((s, i) => (
         <g key={s}>
-          <rect x={32 + i * 146} y="130" width="134" height="240" rx="10" fill="#0d1526" stroke="#1e293b" />
-          <text x={40 + i * 146} y="156" fontFamily="sans-serif" fontSize="11" fontWeight="700" fill="#e2e8f0">{s}</text>
-          <text x={40 + i * 146} y="172" fontFamily="monospace" fontSize="10" fill="#64748b">{3 + i * 2} jobs</text>
+          <rect x={32 + i * 122} y="130" width="112" height="240" rx="10" fill="#122a47" stroke="#2a4a6e" />
+          <text x={40 + i * 122} y="156" fontFamily="sans-serif" fontSize="10" fontWeight="700" fill="#e2e8f0">{s}</text>
+          <text x={40 + i * 122} y="172" fontFamily="monospace" fontSize="10" fill="#64748b">{3 + i * 2} jobs</text>
           {[0, 1, 2].map((c) => (
-            <rect key={c} x={40 + i * 146} y={188 + c * 56} width="118" height="46" rx="8" fill="#16203a" />
+            <rect key={c} x={40 + i * 122} y={188 + c * 56} width="96" height="46" rx="8" fill="#1a3a5c" />
           ))}
           {[0, 1, 2].map((c) => (
             <g key={`t${c}`}>
-              <rect x={48 + i * 146} y={196 + c * 56} width="60" height="8" rx="4" fill="#334155" />
-              <rect x={48 + i * 146} y={210 + c * 56} width="40" height="8" rx="4" fill={i > 2 ? '#22c55e' : '#fb923c'} opacity="0.7" />
+              <rect x={48 + i * 122} y={196 + c * 56} width="52" height="8" rx="4" fill="#3b5a80" />
+              <rect x={48 + i * 122} y={210 + c * 56} width="36" height="8" rx="4" fill={i > 3 ? '#22c55e' : '#ff6b35'} opacity="0.8" />
             </g>
           ))}
         </g>
       ))}
-      <rect x="32" y="400" width="736" height="64" rx="10" fill="#0d1526" stroke="#fb923c" strokeOpacity="0.3" />
-      <text x="52" y="428" fontFamily="sans-serif" fontSize="12" fill="#fdba74">⚡ Instant lead SMS → missed-call text-back → estimate reminders</text>
-      <text x="52" y="448" fontFamily="monospace" fontSize="11" fill="#64748b">5 staged automations · 6-stage pipeline</text>
+      <rect x="32" y="400" width="736" height="64" rx="10" fill="#122a47" stroke="#ff6b35" strokeOpacity="0.4" />
+      <text x="52" y="428" fontFamily="sans-serif" fontSize="12" fill="#ff8c5a">⚡ Missed-call text-back → instant lead SMS → estimate win-back</text>
+      <text x="52" y="448" fontFamily="monospace" fontSize="11" fill="#94a3b8">5 workflows · seasonal nurture · review requests</text>
     </svg>
   );
 }
