@@ -186,6 +186,27 @@ export const flagshipProjects = [
     ],
   },
   {
+    id: 'realestate-erp',
+    name: 'Real Estate ERP',
+    subtitle: 'Agency Management System — Properties, Leads, Commissions, Installments',
+    tagline: '[ CONCEPT DEMO ]',
+    tags: ['Concept Demo', 'ERP', 'Real Estate'],
+    conceptDemo: true,
+    problem:
+      'Real estate agencies with agent teams run on WhatsApp groups and Excel: leads go unassigned, commissions get disputed, and installment ledgers live in paper files.',
+    solution:
+      'Concept demo of a real estate agency ERP: dashboard with live KPIs, property inventory (add/edit/delete), a lead pipeline (New → Contacted → Visit → Negotiating → Closed), agent commission tracking, installment plans with progress and due dates, follow-up reminders (overdue/today/upcoming), one-tap WhatsApp inquiry buttons, and monthly reports. Fully simulated in the browser with sample data.',
+    stack: ['JavaScript', 'LocalStorage', 'Chart.js'],
+    impact: ['Lead pipeline + follow-up reminders', 'Commission tracking per agent', 'Installment ledger with progress'],
+    link: 'https://awaissattar763-ctrl.github.io/realestate-erp-demo/',
+    domain: 'awaissattar763-ctrl.github.io/realestate-erp-demo',
+    gradient: 'gold',
+    extraBadges: [
+      { text: '● CONCEPT DEMO', color: 'gold' },
+      { text: '● SIMULATED', color: 'green' },
+    ],
+  },
+  {
     id: 'voice-ai-receptionist',
     name: 'Voice AI Receptionist',
     subtitle: 'AI Phone Agent for Clinics',
