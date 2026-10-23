@@ -10,9 +10,12 @@ const phrases = [
 
 export default function TypedText() {
   const [phraseIndex, setPhraseIndex] = useState(0);
-  const [charIndex, setCharIndex] = useState(0);
+  // Start with the full first phrase rendered so the static H1 is a complete
+  // sentence ("I build AI receptionists that win customers while you sleep.");
+  // the typing/deleting rotation continues from there.
+  const [charIndex, setCharIndex] = useState(phrases[0].length);
   const [isDeleting, setIsDeleting] = useState(false);
-  const [text, setText] = useState('');
+  const [text, setText] = useState(phrases[0]);
 
   useEffect(() => {
     const current = phrases[phraseIndex];

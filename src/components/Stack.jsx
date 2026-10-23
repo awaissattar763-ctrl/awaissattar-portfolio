@@ -6,7 +6,7 @@ export default function Stack() {
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <Reveal direction="left">
-            <div className="section-num mb-3">/ 10 — Stack</div>
+            <div className="section-num mb-3">/ 09 — Stack</div>
             <h2 className="text-5xl md:text-6xl font-bold tracking-tight mb-6 leading-tight">
               <span className="gradient-text">Tools I use</span><br />
               <span className="font-serif italic text-white">every day.</span>

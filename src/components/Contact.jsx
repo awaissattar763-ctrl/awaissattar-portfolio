@@ -177,6 +177,9 @@ export function Footer() {
               <a href={config.linkedin} target="_blank" rel="noopener noreferrer" className="block hover:text-cyan-400 transition">
                 LinkedIn
               </a>
+              <a href={config.github} target="_blank" rel="noopener noreferrer" className="block hover:text-cyan-400 transition">
+                GitHub
+              </a>
               <a href={config.facebook} target="_blank" rel="noopener noreferrer" className="block hover:text-cyan-400 transition">
                 Facebook
               </a>

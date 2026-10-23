@@ -72,7 +72,7 @@ export default function Work() {
                 </h2>
               </div>
               <p className="hidden md:block text-slate-400 max-w-sm text-sm">
-                Eight production-grade systems — each solving a real business problem with thoughtful
+                Production-grade systems — each solving a real business problem with thoughtful
                 architecture and premium UI.
               </p>
             </div>

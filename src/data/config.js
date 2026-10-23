@@ -5,6 +5,7 @@ export const config = {
   phone: '+92 343 8565360',
   phoneRaw: '923438565360',
   linkedin: 'https://www.linkedin.com/in/awais-sattar-2536ab406',
+  github: 'https://github.com/awaissattar763-ctrl',
   facebook: 'https://www.facebook.com/awaissattar4',
   whatsapp: 'https://wa.me/923438565360',
   location: 'Khanewal, Pakistan',

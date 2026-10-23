@@ -4,11 +4,14 @@ import { useInView } from 'framer-motion';
 export default function Counter({ to, suffix = '+', duration = 1.5 }) {
   const ref = useRef(null);
   const inView = useInView(ref, { once: true, margin: '-50px' });
-  const [value, setValue] = useState(0);
+  // Initial render shows the final value (what crawlers / no-JS visitors see);
+  // once scrolled into view, the count-up animation replays from 0.
+  const [value, setValue] = useState(to);
 
   useEffect(() => {
     if (!inView) return;
     let raf;
+    setValue(0);
     const start = performance.now();
     const tick = (t) => {
       const elapsed = (t - start) / 1000;

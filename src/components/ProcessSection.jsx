@@ -158,7 +158,7 @@ export function Testimonials() {
 const faqs = [
   {
     q: 'Can you build a custom SaaS from scratch?',
-    a: "Yes — that's my specialty. I've built 30+ production SaaS systems including BotFlow (WhatsApp automation), PropIntel AI (real estate intelligence), EduMind AI (school ERP), and Lumière (restaurant management). I handle the full stack: design, frontend, backend, AI integration, and deployment.",
+    a: "Yes — that's my specialty. I've built 34 production SaaS systems including BotFlow (WhatsApp automation), PropIntel AI (real estate intelligence), EduMind AI (school ERP), and Lumière (restaurant management). I handle the full stack: design, frontend, backend, AI integration, and deployment.",
   },
   {
     q: 'Do you integrate AI models like Claude, GPT, or Llama?',
@@ -188,7 +188,7 @@ export function FAQ() {
       <div className="max-w-4xl mx-auto px-6">
         <Reveal>
           <div className="mb-16">
-            <div className="section-num mb-3">/ 09 — FAQ</div>
+            <div className="section-num mb-3">/ 10 — FAQ</div>
             <h2 className="text-5xl md:text-6xl font-bold tracking-tight">
               <span className="gradient-text">Common</span>{' '}
               <span className="font-serif italic text-white">questions.</span>

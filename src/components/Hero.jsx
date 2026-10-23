@@ -68,7 +68,7 @@ export default function Hero() {
             <Reveal direction="up" delay={0.5}>
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                 {[
-                  { count: 20, label: 'Projects Shipped' },
+                  { count: 34, label: 'Projects Shipped' },
                   { count: 8, label: 'AI Integrations' },
                   { count: 10, label: 'Business Niches' },
                   { count: 100, label: 'Client Focus', suffix: '%', cyan: true },
