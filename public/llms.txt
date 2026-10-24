@@ -1,0 +1,39 @@
+# Muhammad Awais Sattar — AI SaaS & Automation Developer
+
+> AI SaaS engineer for service businesses. AI receptionists that never miss a call, automation pipelines that follow up automatically, and custom dashboards that run your operations — designed, built, and deployed.
+
+## Services
+
+- [AI Receptionist Systems](https://awaissattar-portfolio.vercel.app/#services): an AI front desk for local businesses that answers inquiries and follows up automatically.
+- [CRM Setup & Automation](https://awaissattar-portfolio.vercel.app/#services): CRM pipelines that capture, qualify and follow up with leads automatically.
+- [SaaS Admin Dashboards](https://awaissattar-portfolio.vercel.app/#services): custom dashboards that run your operations.
+- [ERP & CRM Systems](https://awaissattar-portfolio.vercel.app/#services): full agency/business management systems — properties, leads, commissions, installments.
+- [AI Integrations](https://awaissattar-portfolio.vercel.app/#services): AI features integrated into existing tools and workflows.
+- [Automation Platforms](https://awaissattar-portfolio.vercel.app/#services): import-ready automation templates and end-to-end workflow builds.
+- [Analytics Dashboards](https://awaissattar-portfolio.vercel.app/#services): reporting dashboards for business operations.
+- [Custom Web Applications](https://awaissattar-portfolio.vercel.app/#services): designed, built, and deployed web applications.
+
+## Live demos
+
+- [SwiftPOS — Complete Retail POS System](https://awaissattar763-ctrl.github.io/swiftpos/)
+- [Real Estate ERP — Agency Management System](https://awaissattar763-ctrl.github.io/realestate-erp-demo/)
+- [AI Receptionist — Dental Clinic](https://awaissattar763-ctrl.github.io/ai-receptionist-dental/)
+- [Voice AI Receptionist — AI Phone Agent for Clinics](https://awaissattar763-ctrl.github.io/voice-ai-receptionist/)
+- [Lead Pipeline Automation](https://awaissattar763-ctrl.github.io/lead-pipeline-automation/)
+- [SyncCRM AI — AI-Enriched CRM Integration](https://awaissattar763-ctrl.github.io/crm-ai-integration/)
+- [WhatsApp AI Chatbot](https://awaissattar763-ctrl.github.io/wa-ai-chatbot-demo/)
+
+## More
+
+- [Work — all projects](https://awaissattar-portfolio.vercel.app/#work)
+- [About](https://awaissattar-portfolio.vercel.app/#about)
+- [Process](https://awaissattar-portfolio.vercel.app/#process)
+- [FAQ](https://awaissattar-portfolio.vercel.app/#faq)
+- [Local SEO & Google Business Profile Portfolio](https://awaissattar763-ctrl.github.io/local-seo-portfolio/)
+
+## Contact
+
+- WhatsApp: https://wa.me/923438565360
+- Email: awaissattar784@gmail.com
+- GitHub: https://github.com/awaissattar763-ctrl
+- LinkedIn: https://www.linkedin.com/in/awais-sattar-2536ab406
