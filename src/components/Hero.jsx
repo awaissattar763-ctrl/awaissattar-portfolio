@@ -20,7 +20,7 @@ export default function Hero() {
               <div className="flex items-center gap-2 mb-8">
                 <span className="live-dot" />
                 <span className="text-xs font-mono text-slate-400 tracking-wider uppercase">
-                  Available for new projects · Q4 2026
+                  Open to full-time roles · Q4 2026
                 </span>
               </div>
             </Reveal>
@@ -60,7 +60,7 @@ export default function Hero() {
                   </svg>
                 </a>
                 <a href="#contact" className="btn-ghost px-8 py-4 rounded-xl text-sm font-medium text-white border border-white/15 hover:border-cyan-400/40 hover:bg-white/5 transition-all">
-                  Book a Free Strategy Call →
+                  Get in Touch →
                 </a>
               </div>
             </Reveal>
@@ -68,7 +68,7 @@ export default function Hero() {
             <Reveal direction="up" delay={0.5}>
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                 {[
-                  { count: 34, label: 'Projects Shipped' },
+                  { count: 34, label: 'Projects Built' },
                   { count: 8, label: 'AI Integrations' },
                   { count: 10, label: 'Business Niches' },
                   { count: 100, label: 'Client Focus', suffix: '%', cyan: true },
@@ -166,7 +166,7 @@ export default function Hero() {
               >
                 <div className="flex items-center gap-2">
                   <span className="live-dot" style={{ width: 6, height: 6 }} />
-                  <span className="text-white font-medium">Available for Freelance</span>
+                  <span className="text-white font-medium">Open to Roles</span>
                 </div>
               </motion.div>
             </motion.div>

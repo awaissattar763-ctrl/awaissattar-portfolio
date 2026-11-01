@@ -67,42 +67,34 @@ const services = [
   {
     title: 'GoHighLevel Setup & Automation',
     body: 'Complete GHL builds for service businesses — pipelines, smart estimate forms, instant lead response, missed-call text-back, estimate reminders, and win-back sequences.',
-    price: 'Starting at $250',
   },
   {
     title: 'AI Receptionist Systems',
     body: '24/7 AI front desk for clinics, home services, and law firms — answers calls, books appointments, and follows up automatically. Never miss a lead again.',
-    price: 'Starting at $300',
   },
   {
     title: 'SaaS Admin Dashboards',
     body: 'Enterprise-grade admin panels with analytics, CRUD, real-time data, role-based access, and premium dark UI.',
-    price: 'Starting at $800',
   },
   {
     title: 'AI Integrations',
     body: 'Custom AI assistants powered by Claude, OpenAI, Groq, or Llama — context-aware, bilingual, integrated with your data.',
-    price: 'Starting at $500',
   },
   {
     title: 'ERP & CRM Systems',
     body: 'Multi-module business systems — inventory, billing, HR, accounting, customer management.',
-    price: 'Starting at $1,500',
   },
   {
     title: 'Automation Platforms',
     body: 'WhatsApp bots, broadcast campaigns, visual flow builders, integration hubs (Shopify, Stripe, Zapier).',
-    price: 'Starting at $700',
   },
   {
     title: 'Analytics Dashboards',
     body: 'Data visualization with charts, KPI cards, real-time metrics, exportable reports for decision-makers.',
-    price: 'Starting at $600',
   },
   {
     title: 'Custom Web Applications',
     body: 'From luxury e-commerce to booking platforms — production-ready React/Next.js apps with full backends.',
-    price: 'Starting at $900',
   },
 ];
 
@@ -185,7 +177,7 @@ export function Services() {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
           {services.map((s, i) => (
-            <Card key={s.title} item={{ ...s, icon: serviceIcons[i] }} idx={i} showPrice />
+            <Card key={s.title} item={{ ...s, icon: serviceIcons[i] }} idx={i} />
           ))}
         </div>
       </div>

@@ -30,8 +30,7 @@ export default function About() {
             </p>
             <p>
               My portfolio spans 10+ business verticals — real estate, dental, legal, home services,
-              retail, education, fitness, hospitality. Every project is a working system with real
-              backend logic, not a mockup: Supabase Auth, PostgreSQL, n8n workflows, voice AI.
+              retail, education, fitness, hospitality. Flagship builds are working systems with real backend logic — Supabase Auth, PostgreSQL, n8n workflows, voice AI — and concept demos elsewhere on this page are labelled as demos, not client work.
             </p>
             <p className="text-slate-400">
               I don't do template work. Each build starts from your actual workflow — how leads come

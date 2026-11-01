@@ -52,103 +52,35 @@ export function Process() {
   );
 }
 
-const testimonials = [
-  {
-    quote:
-      "Awais built our restaurant management system in 3 weeks. The ARIA AI assistant alone has saved us hours every day on wine pairings and guest profiling. This isn't freelance work — this is product engineering.",
-    name: 'Restaurant Owner',
-    role: 'Fine Dining · Dubai',
-    initials: 'RM',
-    gradient: 'from-cyan-400 to-cyan-600',
-  },
-  {
-    quote:
-      "We needed a real-estate intelligence platform that worked in both Urdu and English. Awais delivered something I'd compare to Bloomberg terminal. Our investors think we hired a senior US team.",
-    name: 'Real Estate Consultant',
-    role: 'Property Tech · Lahore',
-    initials: 'RC',
-    gradient: 'from-amber-400 to-amber-600',
-  },
-  {
-    quote:
-      'Our school management system was a mess of spreadsheets. Awais understood the workflow on the first call. Now parents get SMS alerts, fees get tracked automatically, and report cards print in one click.',
-    name: 'School Administrator',
-    role: 'Private Academy · Karachi',
-    initials: 'SA',
-    gradient: 'from-emerald-400 to-emerald-600',
-  },
-  {
-    quote:
-      'I needed a WhatsApp automation platform for our agency clients. Awais built BotFlow with 8 different bot types, broadcast campaigns, and Shopify integration. Our retainer clients love it.',
-    name: 'Startup Founder',
-    role: 'SaaS Agency · Islamabad',
-    initials: 'SF',
-    gradient: 'from-green-400 to-green-600',
-  },
-  {
-    quote:
-      'Most freelancers ship pretty Figma clones. Awais shipped a working POS with barcode generator, receipt printing, and Supabase backend. My team uses it daily. The offline mode is a game-changer.',
-    name: 'Retail Business Owner',
-    role: 'Wholesale · Multan',
-    initials: 'RB',
-    gradient: 'from-purple-400 to-purple-600',
-  },
-  {
-    quote:
-      'We hired Awais for a gym management system. He delivered with offline mode, WhatsApp reminders for unpaid fees, and a clean dashboard our staff actually understands. Worth every rupee.',
-    name: 'Gym Owner',
-    role: 'Fitness Studio · Faisalabad',
-    initials: 'GO',
-    gradient: 'from-orange-400 to-red-500',
-  },
-];
-
 export function Testimonials() {
   return (
     <section id="testimonials" className="py-32 border-t border-white/5 relative">
-      <div
-        className="glow-orb"
-        style={{ width: 500, height: 500, background: '#22d3ee', top: '20%', left: '20%', opacity: 0.06 }}
-      />
-
       <div className="max-w-7xl mx-auto px-6 relative">
         <Reveal>
           <div className="mb-16">
-            <div className="section-num mb-3">/ 08 — Testimonials</div>
+            <div className="section-num mb-3">/ 08 — Client Work</div>
             <h2 className="text-5xl md:text-6xl font-bold tracking-tight">
-              <span className="gradient-text">What clients</span>{' '}
-              <span className="font-serif italic text-white">are saying.</span>
+              <span className="gradient-text">Live client work,</span>{' '}
+              <span className="font-serif italic text-white">not just demos.</span>
             </h2>
+            <p className="text-slate-400 mt-4 max-w-2xl leading-relaxed">
+              The project below is a live site delivered for a paying client. Other projects on
+              this page are working demos and concept builds, labelled on each card.
+              References available on request.
+            </p>
           </div>
         </Reveal>
-
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
-          {testimonials.map((t, i) => (
-            <motion.div
-              key={i}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: '-50px' }}
-              transition={{ duration: 0.6, delay: (i % 3) * 0.1, ease: [0.16, 1, 0.3, 1] }}
-              className="glass rounded-2xl p-7"
-            >
-              <div className="text-cyan-400 mb-4">
-                <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1zm12 0c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z" />
-                </svg>
-              </div>
-              <p className="text-slate-300 leading-relaxed mb-6 text-sm">"{t.quote}"</p>
-              <div className="flex items-center gap-3">
-                <div className={`w-12 h-12 rounded-full bg-gradient-to-br ${t.gradient} flex items-center justify-center text-[#05080d] font-semibold`}>
-                  {t.initials}
-                </div>
-                <div>
-                  <div className="text-white font-medium text-sm">{t.name}</div>
-                  <div className="text-xs text-slate-500 font-mono">{t.role}</div>
-                </div>
-              </div>
-            </motion.div>
-          ))}
+        <div className="grid md:grid-cols-2 gap-5">
+          <a href="https://mpskarachi.com" target="_blank" rel="noreferrer" className="glass rounded-2xl p-7 block hover:border-cyan-400/40 transition">
+            <div className="text-xs font-mono text-cyan-400 mb-3">LIVE CLIENT SITE · REAL ESTATE · KARACHI</div>
+            <h3 className="text-xl font-semibold text-white mb-2">Majestic Property Solutions</h3>
+            <p className="text-sm text-slate-400 leading-relaxed">Property website with live listings, built and deployed for a Karachi property business — mpskarachi.com.</p>
+          </a>
+          <a href="https://awaissattar763-ctrl.github.io/swiftpos/" target="_blank" rel="noreferrer" className="glass rounded-2xl p-7 block hover:border-cyan-400/40 transition">
+            <div className="text-xs font-mono text-cyan-400 mb-3">FLAGSHIP BUILD · RETAIL POS</div>
+            <h3 className="text-xl font-semibold text-white mb-2">SwiftPOS — Retail POS</h3>
+            <p className="text-sm text-slate-400 leading-relaxed">Complete working POS on a real Supabase backend: billing, inventory, roles, offline sales outbox and reports. Demo data only.</p>
+          </a>
         </div>
       </div>
     </section>
@@ -158,7 +90,7 @@ export function Testimonials() {
 const faqs = [
   {
     q: 'Can you build a custom SaaS from scratch?',
-    a: "Yes — that's my specialty. I've built 34 production SaaS systems including BotFlow (WhatsApp automation), PropIntel AI (real estate intelligence), EduMind AI (school ERP), and Lumière (restaurant management). I handle the full stack: design, frontend, backend, AI integration, and deployment.",
+    a: "Yes — that's my specialty. I've built 34 projects including BotFlow (WhatsApp automation), PropIntel AI (real estate intelligence), EduMind AI (school ERP), and Lumière (restaurant management). I handle the full stack: design, frontend, backend, AI integration, and deployment.",
   },
   {
     q: 'Do you integrate AI models like Claude, GPT, or Llama?',
