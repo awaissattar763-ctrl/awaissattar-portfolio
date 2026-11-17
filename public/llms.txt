@@ -12,6 +12,9 @@
 - [Automation Platforms](https://awaissattar-portfolio.vercel.app/#services): import-ready automation templates and end-to-end workflow builds.
 - [Analytics Dashboards](https://awaissattar-portfolio.vercel.app/#services): reporting dashboards for business operations.
 - [Custom Web Applications](https://awaissattar-portfolio.vercel.app/#services): designed, built, and deployed web applications.
+- [AI Voice Agents](https://awaissattar-portfolio.vercel.app/#services): an inbound AI receptionist for clinics, salons and local businesses that answers calls, books appointments, and never misses a call.
+- [AI Video Production](https://awaissattar-portfolio.vercel.app/#services): short-form marketing videos and reels for businesses, scripted, voiced, and edited end to end.
+- [Social Media Automation](https://awaissattar-portfolio.vercel.app/#services): content calendars, scheduled posts, and inbox assistance that keep business pages active daily.
 
 ## Live demos
 
